@@ -33,6 +33,7 @@ public class VistaPrinc extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jComboBox1 = new javax.swing.JComboBox<>();
         Contenedor1 = new javax.swing.JTextField();
+        jTextField1 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -74,6 +75,9 @@ public class VistaPrinc extends javax.swing.JFrame {
         });
         getContentPane().add(Contenedor1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 270, 140, 30));
 
+        jTextField1.setText("jTextField1");
+        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 320, -1, -1));
+
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/shutterstock_1092938375-770x540.jpg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
@@ -86,7 +90,10 @@ public class VistaPrinc extends javax.swing.JFrame {
 
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
         // TODO add your handling code here:
-        Contenedor1.setText(jComboBox1.getSelectedItem().toString()); 
+        //Contenedor1.setText(jComboBox1.getSelectedItem().toString());
+        jTextField1.setText(jComboBox1.getSelectedItem().toString());
+        
+        
     }//GEN-LAST:event_jComboBox1ActionPerformed
 
     /**
@@ -132,5 +139,6 @@ public class VistaPrinc extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }
